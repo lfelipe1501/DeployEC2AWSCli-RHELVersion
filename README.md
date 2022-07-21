@@ -18,7 +18,7 @@ This script creates a pem key in the folder or place where you are located in yo
 
 It also creates a floating IP so that the machine is always connected to a Fixed IP.
 
-All the resources assigned in this script are left with their own name that the script creates randomly.
+All the resources assigned in this script are left with their own name that the script creates randomly..
 
 > *This script does not ask for the region to deploy the instance, it assumes that you already have this configured in your aws-cli environment or if you are using cloudshell, that you are in the region where you want to deploy the new server.*
 
