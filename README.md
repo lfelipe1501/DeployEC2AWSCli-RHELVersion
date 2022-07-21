@@ -27,7 +27,7 @@ All the resources assigned in this script are left with their own name that the 
 Its use is very simple, you just need to go to the cloudshell in your aws console or configure and use aws-cli app on your favorite linux distro:
 
 ```bash
-wget -qN https://raw.githubusercontent.com/lfelipe1501/DeployEC2AWSCli-DebianVersion/main/DeployAWS-DBNBase.sh && chmod +x DeployAWS-DBNBase.sh && bash DeployAWS-DBNBase.sh
+wget -qN https://raw.githubusercontent.com/lfelipe1501/DeployEC2AWSCli-RHELVersion/main/DeployAWS-RHLBase.sh && chmod +x DeployAWS-DBNBase.sh && bash DeployAWS-DBNBase.sh
 ```
 
 a small example of how it works :sunglasses:
