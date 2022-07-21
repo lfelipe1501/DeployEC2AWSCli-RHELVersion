@@ -32,7 +32,7 @@ wget -qN https://raw.githubusercontent.com/lfelipe1501/DeployEC2AWSCli-RHELVersi
 
 a small example of how it works :sunglasses:
 
-https://user-images.githubusercontent.com/7816653/179444412-a1feba30-ac48-40fb-a17c-06b02244e77f.mp4
+https://user-images.githubusercontent.com/7816653/180266731-b74b41b4-3b75-489c-b4ed-b1e6cc99e893.mp4
 
 ### that's it
 
