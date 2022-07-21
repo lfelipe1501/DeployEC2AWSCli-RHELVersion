@@ -14,7 +14,7 @@ This script creates a standard security group with the basic rules for web acces
 
 This script creates a pem key in the folder or place where you are located in your terminal:
 > You can copy the file elsewhere to keep it in a safe place.
-![PEMFile](https://raw.githubusercontent.com/lfelipe1501/lfelipe-projects/master/AWSCliUBNT/AWSCliUBNT.png)
+![PEMFile](https://raw.githubusercontent.com/lfelipe1501/lfelipe-projects/master/AWSCliRHL/AWSCliRHL.png)
 
 It also creates a floating IP so that the machine is always connected to a Fixed IP.
 
