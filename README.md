@@ -5,7 +5,7 @@ This repository contains a little `bash-script` to easily deploy any instance in
 ## Details
 
 This script can be used to deploy any EC2 RHEL version instance in aws ec2 using aws-cli.
-At the moment the script creates a t2.micro instance of the free layer and uses the Official ALMALinux AMI ID to install an up-to-date and working debian system.
+At the moment the script creates a t2.micro instance of the free layer and uses the Official ALMALinux AMI ID to install an up-to-date and working RHEL system.
 
 This script creates a standard security group with the basic rules for web access with the ports:
 * 80
