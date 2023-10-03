@@ -31,7 +31,7 @@ echo -e "$OR by default the script installs$W"
 echo -e "$OR the official version of ALMALINUX from AWS$W"
 echo -e "$W++++++++++++++++++++++++++++++"
 
-read -p "$(echo -e "Enter the RHEL-based AMI ID you wish to use$UY\notherwise leave this field blank $W(e.g.$R ami-0cc844ba751547b30$W): \n> ")" amid
+read -p "$(echo -e "Enter the RHEL-based AMI ID you wish to use$UY\notherwise leave this field blank $W(e.g.$R ami-0d406e26e5ad4de53$W): \n> ")" amid
 
 echo ""
 echo "Please indicate the Instance type..."
@@ -113,7 +113,7 @@ echo -e "$G>> Deploying...$W please wait.....\n"
 
 if [ -z "$amid" ]
 then
-	amid="ami-0cc844ba751547b30"
+	amid="ami-0d406e26e5ad4de53"
 fi
 
 if [ -z "$ectype" ]
