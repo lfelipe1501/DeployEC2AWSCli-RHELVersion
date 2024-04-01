@@ -20,6 +20,9 @@ UG='\033[4;32m'
 BU='\033[1;34;4m'
 GU='\033[1;32;4m'
 
+## Obtener ID AMI AmazonLinux Latest
+AMZ_AMI_ID=$(aws ec2 describe-images --filters "Name=name,Values=al2023-ami-2023.4*x86_64*" --query "sort_by(Images, &CreationDate)[-1:].[ImageId]" --output text)
+
 echo ""
 echo -e "==================================\n$OB EC2 AUTO DEPLOY$W \n==================================\n"
 
@@ -31,7 +34,7 @@ echo -e "$OR by default the script installs$W"
 echo -e "$OR the official version of ALMALINUX from AWS$W"
 echo -e "$W++++++++++++++++++++++++++++++"
 
-read -p "$(echo -e "Enter the RHEL-based AMI ID you wish to use$UY\notherwise leave this field blank $W(e.g.$R ami-03c5f359bd705b082$W): \n> ")" amid
+read -p "$(echo -e "Enter the RHEL-based AMI ID you wish to use$UY\notherwise leave this field blank $W(e.g.$R AMZ_AMI_ID$W): \n> ")" amid
 
 echo ""
 echo "Please indicate the Instance type..."
@@ -113,7 +116,7 @@ echo -e "$G>> Deploying...$W please wait.....\n"
 
 if [ -z "$amid" ]
 then
-	amid="ami-03c5f359bd705b082"
+	amid="$AMZ_AMI_ID"
 fi
 
 if [ -z "$ectype" ]
